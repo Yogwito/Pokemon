@@ -7,6 +7,8 @@ package main;
 import models.Pokemon;
 import pokemones.Bulbasaur;
 import pokemones.Charmander;
+import pokemones.Squirtle;
+import pokemones.Pikachu;
 
 /**
  *
@@ -23,5 +25,14 @@ public class Main {
         Pokemon bulbasaur = new Bulbasaur(1, "Bulbasaur", 1);
         bulbasaur.atacarPlacaje();
         ((Bulbasaur) bulbasaur).atacarDrenaje();
+        
+        Pokemon squirtle = new Squirtle(7, "Squirtle", 1);
+        squirtle.atacarPlacaje();
+        ((Squirtle) squirtle).atacarHidrobomba();
+
+        Pokemon pikachu = new Pikachu(25, "Pikachu", 1);
+        pikachu.atacarPlacaje();
+        ((Pikachu) pikachu).atacarRayo();
     }
+
 }
