@@ -4,23 +4,25 @@
  */
 package pokemones;
 
-import interfaces.Pokemon.PokemonFuego;
+import interfaces.Pokemon.PokemonPlanta;
 import models.Pokemon;
 
 /**
  *
  * @author juans
- * 
- * Clase que representa a un Charmander, un Pokémon de tipo Fuego.
  */
-public class Charmander extends Pokemon implements PokemonFuego {
+/**
+ * Clase que representa a un Bulbasaur, un Pokémon de tipo Planta.
+ */
+
+public class Bulbasaur extends Pokemon implements PokemonPlanta {
     /**
-     * Constructor de Charmander.
+     * Constructor de Bulbasaur.
      * @param numPokedex Número en la Pokédex.
      * @param nombre Nombre del Pokémon.
      * @param temporada Temporada en la que apareció.
      */
-    public Charmander(int numPokedex, String nombre, int temporada) {
+    public Bulbasaur(int numPokedex, String nombre, int temporada) {
         super(numPokedex, nombre, temporada);
     }
 
@@ -40,17 +42,22 @@ public class Charmander extends Pokemon implements PokemonFuego {
     }
 
     @Override
-    public void atacarPunioFuego() {
-        System.out.println(nombre + " usa Puño Fuego!");
+    public void atacarParalizar() {
+        System.out.println(nombre + " usa Paralizar!");
     }
 
     @Override
-    public void atacarAscuas() {
-        System.out.println(nombre + " usa Ascuas!");
+    public void atacarDrenaje() {
+        System.out.println(nombre + " usa Drenaje!");
     }
 
     @Override
-    public void atacarLanzallamas() {
-        System.out.println(nombre + " usa Lanzallamas!");
+    public void atacarHojaAfilada() {
+        System.out.println(nombre + " usa Hoja Afilada!");
+    }
+
+    @Override
+    public void atacarLatigoCepa() {
+        System.out.println(nombre + " usa Látigo Cepa!");
     }
 }
